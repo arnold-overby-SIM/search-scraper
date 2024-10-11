@@ -25,7 +25,7 @@ def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
         for link in results:
             links.append(link)
 
-        linklist = ", ".join(links)
+        linklist = "\n".join(links)
         return func.HttpResponse(
             linklist
             #    f"Hello. This HTTP triggered function executed successfully."
